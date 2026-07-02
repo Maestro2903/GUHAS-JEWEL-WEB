@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --burgundy: #9c1137;
+  --cream: #f6f3ee;
+  --ink: #383434;
+  --muted: #958f86;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-[90px];
+  }
+
+  /* Animated underline used under section headings and links */
+  .heading-rule {
+    @apply mx-auto mt-3 h-[3px] w-16 rounded-full bg-burgundy;
+  }
+
+  .nav-link {
+    @apply relative text-[13px] font-medium uppercase tracking-[0.06em] text-ink/80 transition-colors hover:text-burgundy;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-1 left-0 h-[1.5px] w-0 bg-burgundy transition-all duration-300;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-burgundy px-9 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-burgundy-dark hover:tracking-[0.18em];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center border border-burgundy px-8 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-burgundy transition-all duration-300 hover:bg-burgundy hover:text-white;
+  }
+}
+
+/* Hide scrollbar for horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
