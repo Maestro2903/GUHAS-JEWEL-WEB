@@ -46,8 +46,8 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-sm text-muted">
               <li>
                 Phone:{" "}
-                <a href="tel:+918667661784" className="hover:text-burgundy">
-                  +91 86676 61784
+                <a href="tel:+917904021379" className="hover:text-burgundy">
+                  +91 79040 21379
                 </a>
               </li>
               <li>
@@ -60,11 +60,11 @@ export default function Footer() {
                 </a>
               </li>
               <li className="pt-2 leading-relaxed">
-                No. 13/25, Pallamarathupatti North
+                No. 06, Thiru. V. Ka. Road
                 <br />
-                Pavithiram, Karur
+                Landmark: P.T. Bus Service
                 <br />
-                Tamil Nadu 639002
+                Karur, Tamil Nadu 639001
               </li>
             </ul>
           </div>

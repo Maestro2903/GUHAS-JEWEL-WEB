@@ -18,15 +18,15 @@ const details = [
     icon: MapPinIcon,
     title: "Visit Us",
     lines: [
-      "No. 13/25, Pallamarathupatti North",
-      "Pavithiram, Karur",
-      "Tamil Nadu 639002",
+      "No. 06, Thiru. V. Ka. Road",
+      "Landmark: P.T. Bus Service",
+      "Karur, Tamil Nadu 639001",
     ],
   },
   {
     icon: PhoneIcon,
     title: "Call Us",
-    lines: ["+91 86676 61784"],
+    lines: ["+91 79040 21379"],
   },
   {
     icon: MailIcon,
